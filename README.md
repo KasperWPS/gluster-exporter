@@ -7,8 +7,18 @@
 
 ## Сборка:
 
-git clone https://github.com/KasperWPS/gluster-exporter.git
-cd gluster-exporter
-./build.sh
+```bash
+sudo dnf install git -y
+```
 
-- При успешной сборке rpm-пакет будет в: ~/rpmbuild/RPMS/x86_64/gluster-exporter-1.0-2.fc40.x86_64.rpm
+```bash
+git clone https://github.com/KasperWPS/gluster-exporter.git
+```
+```bash
+cd gluster-exporter
+```
+```bash
+./build.sh
+```
+
+- При успешной сборке rpm-пакет будет в: **~/rpmbuild/RPMS/x86_64/gluster-exporter-1.0-2.fc40.x86_64.rpm**

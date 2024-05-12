@@ -2,7 +2,12 @@
 
 set -e
 
-#sudo dnf install golang rpmdevtools
+export GOPATH=~/go
+export PATH=${PATH}:${GOPATH}/bin
+
+mkdir -p ${GOPATH}/{bin,pkg,src}
+
+sudo dnf install golang rpmdevtools -y
 
 rpmdev-setuptree
 
